@@ -40,7 +40,7 @@ export default function App() {
       setTimeout(() => setStatusStep('Extracting text and chunking data...'), 1500);
       setTimeout(() => setStatusStep('Generating embeddings and building vector graph...'), 3000);
 
-      const response = await fetch('http://localhost:5000/api/upload', {
+      const response = await fetch('http://localhost:5001/api/upload', {
         method: 'POST',
         body: formData,
       });
@@ -75,7 +75,7 @@ export default function App() {
     try {
       setTimeout(() => setStatusStep('Synthesizing response via Gemini API...'), 1500);
 
-      const response = await fetch('http://localhost:5000/api/query', {
+      const response = await fetch('http://localhost:5001/api/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: userMsg }),
