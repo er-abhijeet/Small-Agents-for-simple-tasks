@@ -10,7 +10,7 @@
 #         self.memory = []
         
 #         # Initialize the client. It automatically picks up the GEMINI_API_KEY environment variable.
-#         self.client = genai.Client(api_key="AIzaSyBbJDUDMRPPICJyWj4b44GxWKgqxoxninY")
+#         self.client = genai.Client(api_key="AIzaSyBbJDasdfasdf4GxWKgqxoxninY")
 #         self.model_id = "gemini-2.5-flash" 
 
 #     def _get_system_prompt(self) -> str:
